@@ -340,6 +340,7 @@ def dashboard():
     left_members = [m for m in MEMBERS if m["left"]]
     return render_template(
         "dashboard.html",
+        payment_status=payment_status
         members=MEMBERS,
         months=MONTHS,
         dividends=DIVIDENDS,
