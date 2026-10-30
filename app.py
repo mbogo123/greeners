@@ -18,7 +18,7 @@ import os
 
 app = Flask(__name__)
 app.secret_key = "contribution-tracker-2026-green-theme-secret-key-change-in-prod"
-
+app.jinja_env.globals["payment_status"] =payment status
 # ---------------------------------------------------------------------------
 # Demo credentials (change these in production)
 # ---------------------------------------------------------------------------
